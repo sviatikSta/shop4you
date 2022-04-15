@@ -1,7 +1,7 @@
 <template>
   <div
       class="container mb-4"
-      style="margin-left: 150px auto; max-width: 1200px; min-height: 100%"
+      style="margin-left: 150px auto; max-width: 1200px; min-height: 70%"
   >
     <div class="mx-auto col-4">
           <a

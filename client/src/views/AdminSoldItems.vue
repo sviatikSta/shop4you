@@ -1,7 +1,7 @@
 <template>
-   <div
+  <div
       class="container-fluid"
-      style="min-height: 100vh"
+      style="min-height: 50%"
   >
     <div class="row align-items-center">
       <div class="mx-auto col-4 d-flex">
@@ -23,7 +23,7 @@
     </div>
     <br />
     <br />
-    <table class="table table-striped">
+    <table class="table table-striped mx-auto">
       <thead>
         <th scope="col">Логін покупця</th>
         <th scope="col text-right">Назва товару</th>
@@ -48,19 +48,19 @@
 
           <td>
             <select
-              class="form-control"
+              class="form-control text-light"
               v-if="product.status == 1"
               @change="onChangeStatus($event, product.id)"
-              style="background: #ff9800; color: #fff"
+              style="background: #ff9800; color: #fff; width: 150px"
             >
               <option value="1" selected>Замовлений</option>
               <option value="2">Завершений</option>
             </select>
             <select
-              class="form-control"
+              class="form-control text-light"
               v-else-if="product.status == 2"
               @change="onChangeStatus($event, product.id)"
-              style="background: #4caf50; color: #fff"
+              style="background: #4caf50; color: #fff width: 150px"
             >
               <option value="1">Замовлений</option>
               <option value="2" selected>Завершений</option>
@@ -187,6 +187,7 @@ body {
   font-size: 16px;
   font-weight: 300;
 }
+
 .main-title {
   font-weight: 500;
 }
